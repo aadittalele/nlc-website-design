@@ -40,27 +40,27 @@ useIsClient
   return (
     <div className="flex">
       {useIsClient() && (<>
-        <div className="bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-2 w-24">
-          <p className="text-3xl font-semibold" suppressHydrationWarning>
+        <div className="text-sm xs:text-md bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-1 xs:mx-2 w-18 xs:w-24">
+          <p className="text-2xl xs:text-3xl font-semibold" suppressHydrationWarning>
             <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center" }}>{timeLeft.d}</TextTransition>
           </p>
           Days
         </div>
-        <div className="bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-2 w-24">
-          <p className="text-3xl font-semibold" suppressHydrationWarning>
+        <div className="text-sm xs:text-md bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-1 xs:mx-2 w-18 xs:w-24">
+          <p className="text-2xl xs:text-3xl font-semibold" suppressHydrationWarning>
             <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center" }}>{timeLeft.h}</TextTransition>
           </p>
           Hours
         </div>
-        <div className="bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-2 w-24">
-          <p className="text-3xl font-semibold" suppressHydrationWarning>
-            <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center", height: "24px" }}>{timeLeft.m}</TextTransition>
+        <div className="text-sm xs:text-md bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-1 xs:mx-2 w-18 xs:w-24">
+          <p className="text-2xl xs:text-3xl font-semibold" suppressHydrationWarning>
+            <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center" }}>{timeLeft.m}</TextTransition>
           </p>
           Minutes
         </div>
-        <div className="bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-2 w-24">
-          <p className="text-3xl font-semibold" suppressHydrationWarning>
-            <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center", height: "24px" }}>{timeLeft.s}</TextTransition>
+        <div className="text-sm xs:text-md bg-[#115f8a] border-2 border-[#094566] rounded-xl p-2 mx-1 xs:mx-2 w-18 xs:w-24">
+          <p className="text-2xl xs:text-3xl font-semibold" suppressHydrationWarning>
+            <TextTransition springConfig={preset} style={{ display: "flex", justifyContent: "center" }}>{timeLeft.s}</TextTransition>
           </p>
           Seconds
         </div>

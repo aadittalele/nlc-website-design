@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
+import "@/scss/fade.scss";
 
 const font = Montserrat({ subsets: ["latin"], weight: ["300", "500", "600", "800", "900"] });
 
