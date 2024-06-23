@@ -1,1 +1,0 @@
-// https://www.gfitwellness.ca/blog/6-benefits-of-a-daily-nature-walk-to-your-mental-health
