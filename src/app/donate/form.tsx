@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 
-export default function DonateForm({ onSubmit }) {
+export default function DonateForm({ onSubmit }: { onSubmit: () => void }) {
   const [donateAmount, setDonateAmount] = useState(10);
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -42,7 +42,7 @@ export default function DonateForm({ onSubmit }) {
     return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
   };
 
-  const handlePhoneChange = (e) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const formattedPhoneNumber = formatPhoneNumber(e.target.value);
     setPhone(formattedPhoneNumber);
   };
