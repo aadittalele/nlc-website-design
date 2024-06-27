@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
 import "./globals.css";
-import "@/scss/fade.scss";
-
-const font = Montserrat({ subsets: ["latin"], weight: ["300", "500", "600", "800", "900"] });
+import { variable } from "@/fonts";
+import "@/scss/main.scss";
 
 export const metadata: Metadata = {
   title: "Ecosta: Creating A Greener Tomorrow",
@@ -17,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={variable}>
         {children}
       </body>
     </html>

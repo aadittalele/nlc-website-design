@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-export default function DonateForm({ onSubmit }: { onSubmit: () => void }) {
+export default function GalaForm({ onSubmit }: { onSubmit: () => void }) {
   const [donateAmount, setDonateAmount] = useState(10);
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");

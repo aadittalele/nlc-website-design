@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="py-5 text-white bg-gradient-to-b from-black/30 via-black/30 via-70% to-transparent">
+    <nav className="pt-5 text-white bg-gradient-to-b from-black/30 via-black/30 via-70% to-transparent">
       <div className="max-w-7xl mx-auto px-6 sm:px-16 lg:px-16">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
