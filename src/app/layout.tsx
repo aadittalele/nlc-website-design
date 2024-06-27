@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { variable } from "@/fonts";
 import "@/scss/main.scss";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Ecosta: Creating A Greener Tomorrow",
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={variable}>
         {children}
+        <Footer />
       </body>
     </html>
   );
