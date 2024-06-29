@@ -4,6 +4,7 @@ import DonateForm from "./form";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
 import dynamic from "next/dynamic";
+import DonationCount from "@/components/DonationCount";
 // const DonationCount = dynamic(() => import("@/components/DonationCount"));
 
 export default function Donate() {
@@ -11,7 +12,7 @@ export default function Donate() {
 
   return (
     <div>
-      <div className="pb-32 sm:pb-0 sm:h-[100vh] relative">
+      <div className="pb-16 sm:pb-0 sm:h-[100vh] relative">
         <Image
           alt="planet sign advocacy"
           src="/planet_sign.webp"
@@ -33,10 +34,11 @@ export default function Donate() {
             :
               <DonateForm onSubmit={() => setDonated(true)}/>
             }
+            <DonationCount />
           </div>
           <div className="w-full text-[#F6F6F6] pl-4 sm:pt-14 px-10 xs:px-6 sm:px-0 md:pr-12 sm:w-1/2">
             <h2 className="my-2 text-3xl xs:text-4xl sm:text-3xl md:text-4xl font-bold">Donate to help our environment.</h2>
-            <p className="lead text-md xs:text-xl font-light mb-4">
+            <p className="text-md xs:text-xl font-light mb-4">
               Your generous contributions empower us to tackle pressing environmental challenges, from reforestation
               to plastic waste reduction, and so much more. Every dollar you donate brings us one step closer to a
               sustainable and healthier Earth.

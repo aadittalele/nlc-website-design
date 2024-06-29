@@ -82,11 +82,8 @@ export default function GalaForm({ onSubmit }: { onSubmit: () => void }) {
         </button>
       </div>
       <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-xl" onClick={handleDonation}>
-        Donate
+        Register
       </button>
-      <div className="flex">
-        
-      </div>
       
       { error == "" ? null :
         <p className="mt-4 flex justify-center items-center rounded-xl text-center p-2 bg-red-500 text-lg text-white border-4 border-red-600">

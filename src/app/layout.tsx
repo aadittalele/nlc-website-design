@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { variable } from "@/fonts";
 import "@/scss/main.scss";
 import Footer from "@/components/Footer";
+import { Montserrat } from "next/font/google";
+
+const font = Montserrat({
+  weight: ["300", "500", "600", "800", "900"],
+  subsets: ["latin"]
+});
 
 export const metadata: Metadata = {
   title: "Ecosta: Creating A Greener Tomorrow",
@@ -16,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={variable}>
+      <body className={font.className}>
         {children}
         <Footer />
       </body>
