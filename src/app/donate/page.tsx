@@ -11,12 +11,12 @@ export default function Donate() {
   const [donated, setDonated] = useState(false);
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="pb-16 sm:pb-0 sm:h-[100vh] relative">
         <Image
           alt="planet sign advocacy"
           src="/planet_sign.webp"
-          className="brightness-[.4] blur-[5px]"
+          className="brightness-[.4] blur-[5px] scale-[1.02]"
           style={{
             objectFit: "cover",
             objectPosition: "center top",
@@ -30,7 +30,7 @@ export default function Donate() {
         <div className="w-full pt-6 sm:px-8 flex flex-col-reverse sm:flex-row">
           <div className="w-full sm:pt-14 sm:w-1/2 xs:px-2 sm:px-8 md:px-24 lg:px-48">
             {donated ?
-              <p className="text-white text-2xl font-light">We sent you an email with more information regarding you registration.</p>
+              <p className="text-white text-2xl font-light">Thank you for your kind donation. You will receive an email with more information regarding your donation shortly.</p>
             :
               <DonateForm onSubmit={() => setDonated(true)}/>
             }
@@ -56,9 +56,6 @@ export default function Donate() {
             </ul>
           </div>
         </div>
-      </div>
-      <div className="bg-blue-400 w-full h-64">
-
       </div>
     </div>
   );

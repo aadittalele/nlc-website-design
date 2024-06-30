@@ -9,29 +9,28 @@ if (process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY === undefined) {
 }
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLIC_KEY);
 
-export default function Home() {
-  const amount = 24.99;
-
+export default function Pay({ searchParams: { amount } }: { searchParams: { amount: string } }) {
   return (
-    <main className="max-w-6xl mx-auto p-10 text-white text-center border m-10 rounded-md bg-gradient-to-tr from-blue-400 to-green-600">
+    <main className="text-white text-center bg-gradient-to-tr from-blue-400 to-green-600 h-[100vh] p-10">
       <div className="mb-10">
-        <h1 className="text-4xl font-extrabold mb-2">Sonny</h1>
-        <h2 className="text-2xl">
-          has requested
+        <h1 className="text-3xl mb-2">You are donating</h1>
+        <h2 className="text-5xl">
           <span className="font-bold"> ${amount}</span>
         </h2>
       </div>
+      <div className="px-4 sm:px-10 md:px-24">
+        <Elements
+          stripe={stripePromise}
+          options={{
+            mode: "payment",
+            amount: parseInt(amount) * 100,
+            currency: "usd",
+          }}
+        >
+          <Checkout amount={parseInt(amount)} />
+        </Elements>
+      </div>
 
-      <Elements
-        stripe={stripePromise}
-        options={{
-          mode: "payment",
-          amount: amount * 100,
-          currency: "usd",
-        }}
-      >
-        <Checkout amount={amount} />
-      </Elements>
     </main>
   );
 }

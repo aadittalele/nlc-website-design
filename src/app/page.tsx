@@ -5,16 +5,18 @@ import { date } from "@/util/info";
 import Timer from "@/components/Timer";
 import EarthCanvas from "@/components/EarthCanvas";
 import Statistics from "@/components/Statistics";
+import FadeInView from "@/components/FadeInView";
+import ScaleInView from "@/components/ScaleInView";
 
 export default function Home() {
   return (
-    <main>
+    <main className="overflow-hidden">
       <div>
         <div className="h-[100vh] relative">
           <Image
             alt="trees home"
             src="/trees_home.png"
-            className="blur-[3px] brightness-[.7]"
+            className="blur-[3px] brightness-[.7] scale-[1.02]"
             style={{
               objectFit: "cover",
               objectPosition: "center top",
@@ -52,13 +54,15 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-[#e9f5ea] via-[#e9f5ea] via-60% md:via-50% to-transparent to-70%"></div>
         <div className="z-10 md:my-10 md:w-3/5 text-[#072e2d] px-6 sm:px-20 py-10 mb-56">
-          <h1 className="text-5xl xs:text-6xl font-black drop-shadow-xl">
-            Creating A <span className="text-[#129042]">Greener</span> Tomorrow.
-          </h1>
-          <p className="py-6 md:pr-36 text-xl xs:text-2xl font-light">
-            Our mission is to raise awareness about the importance of protecting the environment and to advocate for
-            policy changes that will help the Earth.
-          </p>
+          <FadeInView x={-800}>
+            <h1 className="text-5xl xs:text-6xl font-black drop-shadow-xl">
+              Creating A <span className="text-[#129042]">Greener</span> Tomorrow.
+            </h1>
+            <p className="py-6 md:pr-36 text-xl xs:text-2xl font-light">
+              Our mission is to raise awareness about the importance of protecting the environment and to advocate for
+              policy changes that will help the Earth.
+            </p>
+          </FadeInView>
         </div>
       </div>
       {/* <div className="flex h-[800px]">
@@ -73,21 +77,35 @@ export default function Home() {
         <p className="text-5xl xs:text-6xl md:text-8xl font-bold mb-6">Our Impact</p>
         <div className="flex flex-col items-center md:items-start md:flex-row">
           <div className="md:w-1/3 px-8 py-4">
-            <p className="text-5xl md:text-7xl font-bold"><Statistics target={1020156} /></p>
-            <p className="text-2xl md:text-4xl mt-2">trees planted</p>
+            <div className="flex flex-col items-center">
+              <ScaleInView>
+                <Image src="/tree.svg" alt="tree" width={140} height={140}/>
+              </ScaleInView>
+              <p className="text-5xl md:text-7xl font-bold mt-4"><Statistics target={1020156} /></p>
+              <p className="text-2xl md:text-4xl mt-2">trees planted</p>
+            </div>
           </div>
           <div className="md:w-1/3 px-8 py-4">
-            <p className="text-5xl md:text-7xl font-bold"><Statistics target={220935} /></p>
-            <p className="text-2xl md:text-4xl mt-2">pounds of plastic removed</p>
+            <div className="flex flex-col items-center">
+              <ScaleInView>
+                <Image src="/recycle.svg" alt="recycle" width={140} height={140}/>
+              </ScaleInView>
+              <p className="text-5xl md:text-7xl font-bold mt-4"><Statistics target={220935} /></p>
+              <p className="text-2xl md:text-4xl mt-2">pounds of plastic removed</p>
+            </div>
           </div>
           <div className="md:w-1/3 px-8 py-4">
-            <p className="text-5xl md:text-7xl font-bold"><Statistics target={56034} /></p>
-            <p className="text-2xl md:text-4xl  mt-2">acres of land protected</p>
+            <div className="flex flex-col items-center">
+              <ScaleInView>
+                <Image src="/land.png" alt="land" width={140} height={140}/>
+              </ScaleInView>
+              <p className="text-5xl md:text-7xl font-bold mt-4"><Statistics target={56034} /></p>
+              <p className="text-2xl md:text-4xl  mt-2">acres of land protected</p>
+            </div>
           </div>
         </div>
       </div>
       <div className="py-12 px-8 text-center">
-        <p className="text-7xl font-semibold mb-12">Earth Needs You.</p>
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/3 mx-2 md:mx-6 rounded-xl bg-white shadow-xl mb-12">
             <Image
@@ -118,8 +136,8 @@ export default function Home() {
           </div>
           <div className="w-full md:w-1/3 mx-2 md:mx-6 rounded-xl bg-white shadow-xl mb-12">
             <Image
-              alt="trees home"
-              src="/trees_home.png"
+              alt="coast"
+              src="/coast.jpg"
               className="rounded-t-2xl w-full h-64 object-cover origin-top"
               quality={30}
               width={450}
@@ -133,7 +151,7 @@ export default function Home() {
               Who are we?
             </p>
             <p className="p-6 text-gray-800">
-              Your donation funds projects that restore forests, wetlands, and other vital ecosystems, providing safe havens for wildlife and maintaining biodiversity.
+              We are a nonprofit committed to protecting the environment through advocacy and restoration, ensuring a sustainable future for everyone.
             </p>
             <Link href="/donate" className="relative inline-flex items-center justify-center p-4 px-6 py-3 mb-6 overflow-hidden font-medium text-white transition duration-300 ease-out bg-blue-500 rounded-full shadow-md group">
               <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-blue-600 group-hover:translate-x-0 ease">
@@ -160,7 +178,7 @@ export default function Home() {
               Come To Our Gala!
             </p>
             <p className="p-6 text-gray-800">
-              Your donation funds projects that restore forests, wetlands, and other vital ecosystems, providing safe havens for wildlife and maintaining biodiversity.
+              Join us for our gala to support environmental protection and advocacy efforts, fostering a sustainable future through impactful initiatives and community engagement.
             </p>
             <Link href="/donate" className="relative inline-flex items-center justify-center p-4 px-6 py-3 mb-6 overflow-hidden font-medium text-white transition duration-300 ease-out bg-[#c9d65a] rounded-full shadow-md group">
               <span className="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-[#A4B509] group-hover:translate-x-0 ease">

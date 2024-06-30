@@ -3,7 +3,7 @@ import TextTransition, { presets } from "react-text-transition";
 import { useIsClient } from "usehooks-ts";
 
 export default function DonationCount() {
-  const [initialMoney, setInitialMoney] = useState(6_044_756 + 0.01 * (Date.now() - 1710974809850));
+  const [initialMoney, setInitialMoney] = useState(6_044_756 + 0.001 * (Date.now() - 1710974809850));
 
   useEffect(() => {
     const interval = setInterval(() => {

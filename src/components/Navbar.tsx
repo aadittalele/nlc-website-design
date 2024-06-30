@@ -31,9 +31,9 @@ export default function Navbar() {
                 <div>
                   <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/donate">Donate</Link>
                 </div>
-                <div>
+                {/* <div>
                   <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/shop">Shop</Link>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -51,9 +51,9 @@ export default function Navbar() {
           <div className="my-2">
             <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/donate">Donate</Link>
           </div>
-          <div className="my-2">
+          {/* <div className="my-2">
             <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/shop">Shop</Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

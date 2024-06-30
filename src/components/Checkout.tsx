@@ -50,6 +50,8 @@ const Checkout = ({ amount }: { amount: number }) => {
       },
     });
 
+    console.log(error);
+
     if (error) {
       // This point is only reached if there's an immediate error when
       // confirming the payment. Show the error to your customer (for example, payment details incomplete)
