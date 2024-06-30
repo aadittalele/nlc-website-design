@@ -54,7 +54,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-[#e9f5ea] via-[#e9f5ea] via-60% md:via-50% to-transparent to-70%"></div>
         <div className="z-10 md:my-10 md:w-3/5 text-[#072e2d] px-6 sm:px-20 py-10 mb-56">
-          <FadeInView x={-800}>
+          <FadeInView delay={1}>
             <h1 className="text-5xl xs:text-6xl font-black drop-shadow-xl">
               Creating A <span className="text-[#129042]">Greener</span> Tomorrow.
             </h1>

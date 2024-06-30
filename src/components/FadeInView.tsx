@@ -8,8 +8,8 @@ function FadeInView({ fade = false, x = 0, y = 0, delay = 0.4, duration = 0.2, m
 
   return (
     <motion.div
-      initial={{ x: x, y: y }}
-      whileInView={{ x: 0, y: 0 }}
+      initial={{ x: x, y: y, opacity: 0 }}
+      whileInView={{ x: 0, y: 0, opacity: 1 }}
       // animate={isInView ? "visible" : "hidden"}
       transition={{ delay: delay, duration: duration, ease: "easeInOut", once: true }}
       variants={{

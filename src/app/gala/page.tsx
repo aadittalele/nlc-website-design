@@ -18,10 +18,7 @@ export default function Gala() {
         <Image
           alt="together nature"
           src="/register.jpg"
-          className="brightness-[.4] blur-[5px] scale-[1.02]"
-          style={{
-            
-          }}
+          className="brightness-[.4] blur-[5px] scale-[1.02] z-[-10]"
           quality={30}
           fill
           priority
@@ -63,7 +60,7 @@ export default function Gala() {
           </div>
         </div>
       </div>
-      <div className="px-24 mx-8 py-8 border-b-2 border-gray-400">
+      <div className="px-4 sm:px-24 mx-8 py-8 border-b-2 border-gray-400">
         <h3 className="pt-5 text-3xl font-bold mb-1">About the Event</h3>
         <p>
           Our gala is a signature event that helps raise crucial funds to support our mission of conserving nature. We
