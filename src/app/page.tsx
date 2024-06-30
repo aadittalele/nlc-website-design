@@ -46,8 +46,8 @@ export default function Home() {
       </div>
       <div className="relative flex">
         <Image
-          alt="trees home"
-          src="/trees_home.png"
+          alt="cliff"
+          src="/cliff.jpg"
           className="absolute inset-0 w-full h-full object-cover object-top blur-0 z-[-1]"
           quality={30}
           fill
@@ -109,8 +109,8 @@ export default function Home() {
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/3 mx-2 md:mx-6 rounded-xl bg-white shadow-xl mb-12">
             <Image
-              alt="trees home"
-              src="/trees_home.png"
+              alt="windmills"
+              src="/windmills.webp"
               className="rounded-t-2xl w-full h-64 object-cover"
               quality={30}
               width={450}

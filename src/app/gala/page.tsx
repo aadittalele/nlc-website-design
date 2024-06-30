@@ -63,6 +63,20 @@ export default function Gala() {
           </div>
         </div>
       </div>
+      <div className="px-24 mx-8 py-8 border-b-2 border-gray-400">
+        <h3 className="pt-5 text-3xl font-bold mb-1">About the Event</h3>
+        <p>
+          Our gala is a signature event that helps raise crucial funds to support our mission of conserving nature. We
+          invite you to join us for an unforgettable evening of celebration, inspiration, and philanthropy. By attending
+          the gala, you are not only treating yourself to a memorable night but also playing a pivotal role in advancing
+          the causes we hold dear.
+        </p>
+        <h3 className="pt-12 mb-1 text-3xl font-bold">How to Purchase Tickets</h3>
+        <p className="pb-4">
+          To secure your spot at the gala, please use our registration form. Limited tickets are available, so we
+          encourage you to reserve your spot early.
+        </p>
+      </div>
       <div className="flex flex-col md:flex-row items-center px-4">
         <div className="w-full md:w-1/2">
           <FAQ />

@@ -6,7 +6,7 @@ export default function PaymentSuccess({
   searchParams: { amount: string };
 }) {
   return (
-    <main className="p-10 text-white text-center m-10 rounded-md bg-gradient-to-tr from-green-500 to-blue-600">
+    <main className="p-10 h-[100vh] text-white text-center bg-gradient-to-tr from-green-500 to-blue-600">
       <div className="mb-10">
         <h1 className="text-4xl font-extrabold mt-4 mb-8">Thank you for your donation!</h1>
         <h2 className="text-2xl">You successfully sent</h2>
