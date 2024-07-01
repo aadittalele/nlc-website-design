@@ -1,5 +1,6 @@
 "use client";
 import EarthCanvas from "@/components/EarthCanvas";
+import { TypeAnimation } from 'react-type-animation';
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
@@ -41,13 +42,14 @@ function AboutUs() {
       //     body: JSON.stringify({ name: name, email: email, message: message })
       //   }
       // );
+      setError("");
       setSubmitted(true);
     }
   }
 
 	return (
 		<div className="overflow-hidden">
-      <div className="h-[40vh] sm:h-[45vh] relative">
+      <div className="pb-20 relative overflow-hidden">
         <Image
           alt="cliff"
           src="/cliff.jpg"
@@ -57,13 +59,16 @@ function AboutUs() {
             objectPosition: "center top",
             zIndex: -1
           }}
-          quality={50}
+          quality={30}
           fill
           priority
         />
         <Navbar />
         <div className="flex justify-center items-center text-white mt-20">
-          <p className="text-6xl xs:text-7xl sm:text-8xl font-bold">About Us</p>
+          <p className="text-start text-2xl xs:text-4xl sm:text-6xl md:text-7xl font-bold">
+            We are{" "}
+            <TypeAnimation repeat={Infinity} speed={1} sequence={["leaders.", 1500, "volunteers.", 1500, "collaborators.", 1500, "advocators.", 1500, "changemakers.", 1500, "visionaries.", 1500, "innovators.", 1500, "thinkers.", 1500]} />
+          </p>
         </div>
       </div>
       <div className="mt-8">
@@ -78,20 +83,34 @@ function AboutUs() {
           </div>
           <div className="w-full md:w-1/2 p-8 text-center md:text-start">
             <p className="mb-4 bg-gradient-to-r from-green-600 via-green-400 to-green-300 text-transparent bg-clip-text font-bold text-5xl">
-              Our Intiatives
+              Our Initiatives
             </p>
             <p className="mr-0 md:mr-16 text-gray-500">
               Our projects stretch across continents from Africa to Asia, covering every corner of the globe. We're a nonprofit committed to environmental advocacy and restoration, aiming to foster change.
             </p>
           </div>
         </div>
+        {/* <div className="grid grid-cols-2 p-4">
+          <div className="bg-blue-800 text-3xl font-bold text-white flex items-center justify-center">
+            <span>Conservation and Restoration</span>
+          </div>
+          <div className="bg-green-800 text-3xl font-bold text-white p-8 flex items-center justify-center">
+            <span>Scientific Research</span>
+          </div>
+          <div className="bg-green-800 text-3xl font-bold text-white p-8 flex items-center justify-center">
+            <span>Advocacy and Policy Change</span>
+          </div>
+          <div className="bg-blue-800 text-3xl font-bold text-white p-8 flex items-center justify-center">
+            <span>Community Engagement</span>
+          </div>
+        </div> */}
         <div className="flex justify-center my-10 overflow-hidden">
           <div style={{ width: "600px", height: "360px" }}>
             <EarthCanvas />
           </div>
         </div>
         <p className="text-center text-xl sm:text-2xl md:text-4xl mt-28">Have any questions? Contact us at <span className="font-bold">support@ecostafbla.org</span></p>
-        <p className="text-center text-xl sm:text-2xl md:text-4xl font-bold my-4">OR</p>
+        <p className="text-center text-xl sm:text-2xl md:text-4xl font-bold my-4">or</p>
         <p className="text-center text-xl sm:text-2xl md:text-4xl">Fill out the form below:</p>
         <p className="text-center text-2xl sm:text-3xl md:text-5xl font-black mt-10">Contact Us Form</p>
         <div className="flex flex-col items-center mt-8">

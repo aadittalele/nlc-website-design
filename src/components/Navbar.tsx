@@ -11,7 +11,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="pt-5 text-white bg-gradient-to-b from-black/30 via-black/30 via-70% to-transparent">
+    <nav className="pt-5 text-white bg-gradient-to-b from-black/10 via-black/10 via-70% to-transparent">
       <div className="max-w-7xl mx-auto px-6 sm:px-16 lg:px-16">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -31,9 +31,9 @@ export default function Navbar() {
                 <div>
                   <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/donate">Donate</Link>
                 </div>
-                {/* <div>
+                <div>
                   <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/shop">Shop</Link>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -51,9 +51,9 @@ export default function Navbar() {
           <div className="my-2">
             <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/donate">Donate</Link>
           </div>
-          {/* <div className="my-2">
+          <div className="my-2">
             <Link className="mx-2 px-2 py-2 border-white hover:border-b-2 transition-all rounded-sm" href="/shop">Shop</Link>
-          </div> */}
+          </div>
         </div>
       </div>
     </nav>

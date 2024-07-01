@@ -9,7 +9,7 @@ function Timeline() {
     <div className="bg-[#F6F6F6] mx-4 sm:mx-auto">
       <div className="relative overflow-hidden py-10 md:px-4">
         <div className="border-2 absolute border-opacity-20 border-blue-700 h-full border left-1/2"></div>
-        <FadeInView y={45} margin="0px 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between items-center w-full">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">
@@ -22,7 +22,7 @@ function Timeline() {
             </div>
           </div>
         </FadeInView>
-        <FadeInView y={45} margin="-30% 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">
@@ -35,7 +35,7 @@ function Timeline() {
             </div>
           </div>
         </FadeInView>
-        <FadeInView y={45} margin="-30% 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">
@@ -48,7 +48,7 @@ function Timeline() {
             </div>
           </div>
         </FadeInView>
-        <FadeInView y={45} margin="-30% 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">
@@ -61,7 +61,7 @@ function Timeline() {
             </div>
           </div>
         </FadeInView>
-        <FadeInView y={45} margin="-30% 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between items-center w-full right-timeline">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">
@@ -74,7 +74,7 @@ function Timeline() {
             </div>
           </div>
         </FadeInView>
-        <FadeInView y={45} margin="-30% 0px">
+        <FadeInView y={45}>
           <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
             <div className="order-1 w-5/12"></div>
             <div className="z-20 flex items-center order-1 bg-blue-800 shadow-xl w-8 h-8 rounded-full">

@@ -4,7 +4,7 @@ import { ReactNode, useRef } from "react";
 
 function ScaleInView({ children }: { children: ReactNode }) {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-10% 0px" });
+  const isInView = useInView(ref, { once: true, margin: "-20% 0px" });
 
   return (
     <motion.div

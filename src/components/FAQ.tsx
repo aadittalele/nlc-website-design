@@ -44,8 +44,8 @@ function FAQ() {
   ];  
 
   return (
-    <div className="mx-auto py-10">
-      <h1 className="text-2xl sm:text-4xl font-bold mb-6 text-center">Frequently Asked Questions</h1>
+    <div className="mx-4 xs:mx-8 sm:mx-32 py-10">
+      <h1 className="text-3xl md:text-5xl bg-gradient-to-r from-blue-500 via-cyan-500 to-green-500 text-transparent bg-clip-text text-2xl sm:text-4xl font-bold pb-6 text-center">Frequently Asked Questions</h1>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div key={index} className="border border-gray-200 rounded-lg">

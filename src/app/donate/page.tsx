@@ -12,7 +12,7 @@ export default function Donate() {
 
   return (
     <div className="overflow-hidden">
-      <div className="pb-16 sm:pb-0 sm:h-[100vh] relative">
+      <div className="pb-16 sm:pb-0 sm:h-[100vh] relative overflow-hidden">
         <Image
           alt="planet sign advocacy"
           src="/planet_sign.webp"

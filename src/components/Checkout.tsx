@@ -50,15 +50,9 @@ const Checkout = ({ amount }: { amount: number }) => {
       },
     });
 
-    console.log(error);
-
     if (error) {
-      // This point is only reached if there's an immediate error when
-      // confirming the payment. Show the error to your customer (for example, payment details incomplete)
       setErrorMessage(error.message);
     } else {
-      // The payment UI automatically closes with a success animation.
-      // Your customer is redirected to your `return_url`.
     }
 
     setLoading(false);
