@@ -1,1 +1,2 @@
-export const date = new Date("2024-09-28T17:00:00.000-06:00");
+export const date = new Date();
+date.setFullYear(date.getFullYear(), 11, 31);
