@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import Link from "next/link";
-import { date } from "@/util/info";
+import { targetDate } from "@/util/info";
 import Timer from "@/components/Timer";
 import EarthCanvas from "@/components/EarthCanvas";
 import Statistics from "@/components/Statistics";
@@ -30,7 +30,7 @@ export default function Home() {
           <div className="text-white absolute text-center w-full mt-32 px-2 md:px-32">
             <div className="flex flex-col items-center">
               <h1 className="font-bold drop-shadow-xl text-4xl xs:text-6xl sm:text-8xl mb-8">Join Us At Our Upcoming Gala!</h1>
-              <Timer date={date}/>
+              <Timer date={targetDate}/>
               <div className="mt-7 sm:mt-8 md:mt-10">
                 <Link href="/gala" className="px-5 py-2.5 border-4 border-green-700 relative rounded-full group overflow-hidden font-medium bg-green-600 inline-block">
                   <span className="absolute top-0 left-0 flex w-full h-0 mb-0 transition-all duration-200 ease-out transform translate-y-0 bg-green-700 group-hover:h-full opacity-90"></span>

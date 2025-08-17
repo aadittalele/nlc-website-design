@@ -1,4 +1,5 @@
 const date = new Date();
-date.setFullYear(date.getFullYear(), 11, 31);
+const targetDate = new Date();
+targetDate.setFullYear(targetDate.getFullYear(), 11, 31);
 
-export const date;
+export { date, targetDate };
